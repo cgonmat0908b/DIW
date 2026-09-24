@@ -9,7 +9,24 @@
 
 <body>
 
-    
+    <button id="abrir">Abrir</button>
+
+    <dialog id="modales">
+
+        <h2>Ventana emergente</h2>
+        <p>¿Que hora es?</p>
+        <p>¿Estas de acuerdo?</p>
+        <p>¿Seguro?</p>
+        <button id="cerrar">Cerrar</button>
+
+    </dialog>
+
+    <script>
+        const modales = document.getElementById("modales");
+        document.getElementById("abrir").addEventListener("click", () => modales.showModal());
+        document.getElementById("cerrar").addEventListener("click", () => modales.close());
+
+    </script>
     
 </body>
 
