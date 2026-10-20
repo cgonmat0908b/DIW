@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Ejercicio 4 estilos imagenes -->
+    <style>
+
+        #Articulos img{
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Cristian González Mateo</h2>
+    <h2>02-05 etiquetas HTML Imágenes </h2>
+    
+    <h2>1. ¿Cuál es la diferencia principal entre los formatos de imagen rasterizados y los vectoriales? (Ejemplo: JPEG y PNG vs. SVG)</h2>
+
+    <ul>
+        <li>Imágenes rasterizadas (JPEG, PNG): Están formadas por píxeles (pequeños puntos de color). Al ampliarlas demasiado, pierden calidad y se ven pixeladas.</li>
+        <li>Imágenes vectoriales (SVG): Están formadas por figuras geométricas definidas matemáticamente, como líneas y curvas. Se pueden ampliar o reducir sin perder calidad.</li>
+    </ul>
+
+    <h2>2. ¿Por qué el formato JPEG es el más utilizado para fotografías digitales, y cuáles son las consecuencias de su compresión con pérdida?</h2>
+
+    <p>El formato JPEG es muy utilizado para fotografías porque permite reducir bastante el tamaño de los archivos manteniendo una calidad visual aceptable.
+    Esto facilita su almacenamiento y su envío por Internet.</p>
+
+    <p>La principal consecuencia de su compresión con pérdida es que elimina parte de la información de la imagen para reducir su tamaño.</p>
+
+    <ul>
+        <li>Se pierde calidad, especialmente si se comprime demasiado.</li>
+        <li>Pueden aparecer zonas borrosas o defectos visuales.</li>
+        <li>Si se edita y guarda repetidamente, puede perder todavía más calidad.</li>
+    </ul>
+
+    <h2>3. Explica en qué situaciones sería más conveniente usar una imagen PNG en lugar de una JPEG.</h2>
+
+    <p>Es más conveniente utilizar PNG cuando necesitamos mantener una buena calidad de imagen o utilizar transparencias.</p>
+
+    <ul>
+        <li>Cuando la imagen tiene un fondo transparente.</li>
+        <li>Para capturas de pantalla que contienen texto.</li>
+        <li>Para imágenes con líneas, iconos o colores planos.</li>
+        <li>Cuando queremos evitar pérdidas de calidad al guardar la imagen.</li>
+    </ul>
+
+    <h2>4. El formato GIF tiene limitaciones en su paleta de colores. ¿Cómo afecta esto a la calidad visual de las imágenes y qué ventajas mantiene frente a otros formatos?</h2>
+
+    <p>El formato GIF solamente puede utilizar hasta 256 colores por imagen, por lo que las fotografías pueden perder calidad y mostrar colores poco naturales.</p>
+
+    <p>A pesar de esto, tiene algunas ventajas:</p>
+
+    <ul>
+        <li>Permite crear animaciones sencillas.</li>
+        <li>Es compatible con prácticamente todos los navegadores.</li>
+        <li>Puede tener archivos pequeños cuando las imágenes son simples.</li>
+        <li>Permite transparencia básica.</li>
+    </ul>
+
+    <h2>5. ¿Qué características hacen del formato SVG una buena opción para logotipos y gráficos escalables en la web?</h2>
+
+    <p>El formato SVG es una buena opción porque utiliza gráficos vectoriales, por lo que se puede cambiar su tamaño sin perder calidad.</p>
+
+    <ul>
+        <li>No se pixela al ampliar la imagen.</li>
+        <li>Suele ocupar poco espacio en gráficos sencillos.</li>
+        <li>Se puede modificar mediante código HTML, CSS y JavaScript.</li>
+        <li>Es ideal para logotipos, iconos y dibujos sencillos.</li>
+    </ul>
+
+    <h2>6. Compara el formato WEBP con PNG y JPEG. ¿Qué ventajas ofrece en términos de compresión, transparencia y animación?</h2>
+
+    <p>El formato WebP es un formato de imagen moderno diseñado para reducir el tamaño de los archivos sin perder demasiada calidad.</p>
+
+    <ul>
+        <li>Frente a JPEG: Puede conseguir archivos más pequeños con una calidad visual similar.</li>
+        <li>Frente a PNG: Puede ofrecer archivos más pequeños y también permite transparencias.</li>
+        <li>Compresión: Permite compresión con pérdida y sin pérdida.</li>
+        <li>Animación: Permite crear imágenes animadas, como los GIF.</li>
+    </ul>
+
+    <p>Por estas razones, WebP es una buena opción para utilizar imágenes en páginas web.</p>
+
+    <h2>7. ¿Por qué el formato BMP no se utiliza comúnmente en entornos web, y en qué casos aún puede ser útil?</h2>
+
+    <p>El formato BMP no se utiliza mucho en páginas web porque normalmente genera archivos bastante grandes, ya que suele guardar las imágenes sin comprimir.</p>
+
+    <p>Esto hace que las páginas web tarden más en cargar.</p>
+
+    <p>Aun así, puede ser útil en algunas situaciones:</p>
+
+    <ul>
+        <li>En programas antiguos que utilizan este formato.</li>
+        <li>Cuando se necesita trabajar con imágenes sin compresión.</li>
+        <li>En determinadas aplicaciones de Windows.</li>
+    </ul>
+
+    <h2>8. Explica las ventajas del formato PSD en el proceso de edición de imágenes profesionales. ¿Qué lo diferencia de los demás formatos?</h2>
+
+    <p>El formato PSD es el formato de trabajo de Adobe Photoshop y se utiliza principalmente para editar imágenes y diseños.</p>
+
+    <p>Su principal ventaja es que permite guardar los elementos de un proyecto por separado.</p>
+
+    <ul>
+        <li>Permite trabajar con varias capas.</li>
+        <li>Guarda textos, efectos y máscaras editables.</li>
+        <li>Permite modificar partes del diseño sin tener que empezar de nuevo.</li>
+        <li>Mantiene la información necesaria para continuar editando el proyecto.</li>
+    </ul>
+
+    <p>A diferencia de JPEG, PNG o WebP, PSD está pensado principalmente para editar imágenes, no para mostrarlas directamente en una página web.</p>
+
+    <h2>9. Si un diseñador necesita una imagen con transparencia, buena calidad y tamaño de archivo razonable para una página web moderna, ¿qué formato debería elegir y por qué?</h2>
+
+    <p>La mejor opción en general sería utilizar WebP, ya que permite tener imágenes con transparencia, buena calidad y un tamaño de archivo reducido.</p>
+
+    <ul>
+        <li>Permite utilizar fondos transparentes.</li>
+        <li>Ofrece buena calidad de imagen.</li>
+        <li>Normalmente ocupa menos espacio que PNG.</li>
+        <li>Es compatible con los navegadores web modernos.</li>
+    </ul>
+
+    <p>También se podría utilizar PNG si fuera importante conservar exactamente todos los detalles de la imagen, aunque normalmente ocuparía más espacio.</p>
+
+    <h2>10. Describe las diferencias entre la compresión con pérdida y sin pérdida, indicando qué formatos utilizan cada tipo y en qué casos es preferible uno sobre el otro.</h2>
+
+    <p>La compresión con pérdida reduce el tamaño de una imagen eliminando parte de su información. Esto hace que ocupe menos espacio, pero puede disminuir su calidad.</p>
+
+    <ul>
+        <li>Formatos: JPEG y WebP con pérdida.</li>
+        <li>Es recomendable para fotografías e imágenes donde sea más importante reducir el tamaño del archivo.</li>
+    </ul>
+
+    <p>La compresión sin pérdida reduce el tamaño del archivo sin eliminar información de la imagen, por lo que mantiene su calidad original.</p>
+
+    <ul>
+        <li>Formatos: PNG, GIF y WebP sin pérdida.</li>
+        <li>Es recomendable para capturas de pantalla, gráficos, iconos e imágenes que necesitan conservar sus detalles.</li>
+    </ul>
+
+    <p>En resumen, la compresión con pérdida es mejor cuando buscamos archivos pequeños, mientras que la compresión sin pérdida es preferible cuando necesitamos conservar la calidad original.</p>
+
+    <h2>Ejercicio 1 Imagenes y formatos</h2>
+    <div id="Ejercicio1">
+
+        <!--Primer apartado-->
+
+        <!-- Imagen PNG-->
+        <p>PNG</p>
+        <p>Original:</p>
+        <img src="./imgs/PNG.png" alt="Imagen PNG">
+        <p>Ancho 30%</p>
+        <img src="./imgs/PNG.png" alt="Imagen PNG" width="30%">
+        <p>Altura 50%</p>
+        <img src="./imgs/PNG.png" alt="Imagen PNG" height="50%">
+
+        <!--Imagen JPEG-->
+        <p>JPEG</p>
+        <p>Original:</p>
+        <img src="./imgs/JPEG.jpg" alt="Imagen JPEG">
+        <p>Ancho 30%</p>
+        <img src="./imgs/JPEG.jpg" alt="Imagen JPEG" width="30%">
+        <p>Altura 50%</p>
+        <img src="./imgs/JPEG.jpg" alt="Imagen JPEG" height="50%">
+
+        <!--Imagen JPEG-->
+        <p>SVG</p>
+        <p>Original:</p>
+        <img src="./imgs/SVG.svg" alt="Imagen SVG">
+        <p>Ancho 30%</p>
+        <img src="./imgs/SVG.svg" alt="Imagen SVG" width="30%">
+        <p>Altura 50%</p>
+        <img src="./imgs/SVG.svg" alt="Imagen SVG" height="50%">
+
+        <!--Segundo apartado-->
+        <!--WEBPS-->
+        <p>Imagenes a WEBP</p>
+        <img src="./imgs/PNGWEBP.webp" alt="Imagen PNG a WEBP">
+        <img src="./imgs/JPEGWEBP.webp" alt="Imagen JPEG a WEBP">
+        <img src="./imgs/SVGWEBP.webp" alt="Imagen SVG a WEBP">
+
+        <!--AVIF-->
+        <p>Imagenes a AVIF</p>
+        <img src="./imgs/PNGAVIF.avif" alt="Imagen PNG a AVIF">
+        <img src="./imgs/JPEGAVIF.avif" alt="Imagen JPEG a AVIF">
+        <img src="./imgs/SVGAVIF.avif" alt="Imagen SVG a AVIF"><br>
+
+        <!-- Tercer apartado -->
+        <p>Imagen con &lt;picture></p>
+        <picture>
+            <source srcset="./imgs/PNGAVIF.avif" type="image/avif">
+            <source srcset="./imgs/PNGWEBP.webp" type="image/webp">
+            <img src="./imgs/PNG.png" alt="Paisajes " width="800" height="600" loading="lazy">
+        </picture>
+        
+    </div>
+
+    <h2>Ejercicio 3 Semántica y Accesibilidad WCAG 2.2</h2>
+
+    <div id="Ej3">
+
+        <!--Imagen informativa -->
+        <figure>
+            <img src="./imgs/grafica.png"
+                alt="Gráfico de barras con las puntuaciones PageSpeed de 80 páginas web"
+                aria-describedby="datos-pagespeed">
+
+            <figcaption>
+                Figura 1. Distribución de las puntuaciones PageSpeed de 80 páginas web.
+            </figcaption>
+
+            <p id="datos-pagespeed">
+                Desglose de los resultados:
+            </p>
+
+            <ul>
+                <li>Menos de 41 puntos: 10%</li>
+                <li>41-50 puntos: 10%</li>
+                <li>51-60 puntos: 13,75%</li>
+                <li>61-70 puntos: 22,50%</li>
+                <li>71-80 puntos: 16,25%</li>
+                <li>81-90 puntos: 15%</li>
+                <li>91-100 puntos: 12,50%</li>
+            </ul>
+        </figure>
+
+
+        <!-- Imagen Funcional-->
+        <button>
+            <img src="./imgs/Lupa.jpg" alt="Buscador">
+        </button>
+
+        <!-- Imagen Decorativa-->
+        <img src="./imgs/Ornamental.jpg" aria-hidden="true" alt="Fondo ornamental con un decorado de color verde esmeralda">
+
+        <!-- Fragmento de código -->
+        <figure>
+            <pre><code>
+                &lt;h1&gt;Hola mundo&lt;/h1&gt;
+            </code></pre>
+
+            <figcaption>
+                Código básico, hola mundo
+            </figcaption>
+        </figure>
+
+    </div>
+
+    <h2>Ejercicio 4</h2>
+    <div id="Ejercicio4">
+
+        <header style="display: flex; align-items: center; justify-content: center;">
+            <img src="./imgs/HEADER.png" alt="" loading="eager" fetchpriority="high">
+        </header>
+
+        <main >
+            <div id="Articulos" style="display: flex; align-items: center; justify-content: center; flex-direction: column;"> 
+                <img src="./imgs/Imagen1.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen2.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen3.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen4.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen5.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen6.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen7.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen8.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen9.png" alt="" loading="lazy" width="186px" height="235px">
+                <img src="./imgs/Imagen10.png" alt="" loading="lazy" width="186px" height="235px">
+            </div>
+        </main>
+    </div>
+
+    <h2>Ejercicio 5</h2>
+    <div id="Ejercicio5">
+
+        <a href="#Ej5Img">
+            <img id="Ej5Img" src="./imgs/Diagrama.webp" ismap>
+        </a>
+
+    </div>
+
+    <h2>Ejercicio 6</h2>
+    <div id="Ejercicio6">
+
+        <img    src="./imgs/300.webp"
+                alt=""
+                srcset="./imgs/100.webp 100w,
+                        ./imgs/300.webp 300w,
+                        ./imgs/500.webp 500w"
+
+                sizes=" (min-width: 800px) 500px
+                        (min-width: 500px) 300px
+                        (min-width: 300px) 100px
+                        100vw"
+                width="500px"
+                height="550px"
+                loading="lazy">
+
+    </div>
+
+</body>
+
+</html>

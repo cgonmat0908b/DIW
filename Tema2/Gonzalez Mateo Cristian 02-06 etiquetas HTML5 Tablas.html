@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Cristian González Mateo</h2>
+    <h2>02-06 etiquetas HTML5 Tablas</h2>
+
+    <h2>
+        Ejercicio 1<br>
+        Crea las siguientes tablas básicas usando el formato básico de las tablas
+    </h2>
+    <div id="Ej1">
+        <!-- Tabla 1 -->
+
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+
+        </table>
+
+        <table border="1">
+            <tr>
+                <td>línea 11</td>
+                <td>línea 12</td>
+                <td>línea 13</td>
+            </tr>
+            <tr>
+                <td>línea 21</td>
+                <td>línea 22</td>
+                <td>línea 23</td>
+            </tr>
+            <tr>
+                <td>línea 31</td>
+                <td>línea 32</td>
+                <td>línea 33</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <h2>
+        Ejercicio 2 <br>
+        Crea las siguientes tablas . La primera línea es de cabeceras por eso usa th
+    </h2>
+    <div id="Ej2">
+        <table border="1">
+            <thead>
+                <th>Cabecera1</th>
+                <th>Cabecera2</th>
+                <th>Cabecera3</th>
+            </thead>
+
+            <tr>
+                <td>línea 21</td>
+                <td>línea 22</td>
+                <td>línea 23</td>
+            </tr>
+
+            <tr>
+                <td>línea 31</td>
+                <td>línea 32</td>
+                <td>línea 33</td>
+            </tr>
+        </table>
+<br><br>
+        <table border="1" style="background-color: green;">
+            <thead>
+                <th>Cabecera1</th>
+                <th>Cabecera2</th>
+                <th>Cabecera3</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>línea 11</td>
+                    <td>línea 12</td>
+                    <td>línea 13</td>
+                </tr>
+                <tr>
+                    <td>línea 21</td>
+                    <td>línea 22</td>
+                    <td>línea 23</td>
+                </tr>
+                <tr>
+                    <td>línea 31</td>
+                    <td>línea 32</td>
+                    <td>línea 33</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Pie 1</td>
+                    <td>Pie 2</td>
+                    <td>Pie 3</td>
+                </tr>
+            </tfoot>
+        </table>
+<br><br>
+        <table border="1">
+            <colgroup>
+                <col style="background-color: lime; width: 120px;">
+                <col style="background-color: lightblue; width: 40px;">
+                <col style="background-color: red; width: 80px;">
+            </colgroup>
+            
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <h2>
+        Ejercicio 3 Agrupando filas de una tabla, o columnas. <br>
+        Crea una tabla de 4x8 (4 columnas 8 filas) y replicala <br>
+        Utiliza la palabra clave tbody para agrupar filas con estos datos style=”background-color: color” <br>
+    </h2>
+    <div id="Ejercicio4">
+        
+        <table border="1">
+            <tbody style="background-color: lightblue; text-align: left;">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+
+            <tbody style="background-color: orange; text-align: center;">
+                <tr>
+                    <td>4</td>
+                    <td>Esta es una celda<br>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+
+            <tbody style="background-color: lightblue; text-align: left;">
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+
+            <tbody style="background-color: lime; text-align: right;">
+                <tr>
+                    <td>4</td>
+                    <td>Esta es una celda<br>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
