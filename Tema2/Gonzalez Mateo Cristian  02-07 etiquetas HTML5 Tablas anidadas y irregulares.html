@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h2>Cristian González Mateo</h2>
+    <h2>02-07 etiquetas HTML5 Tablas anidadas y irregulares.</h2>
+
+    <h2>Ejercicio 1 Fusión de celdas: rowspan y colspan</h2>
+    <div id="Ejercicio1">
+        <h2>A&#41;</h2>
+        <table border="1">
+            <tr>
+                <td colspan="2">Esta celda tiene un colspan="2"</td>
+            </tr>
+            <tr>
+                <td>Celda normal</td>
+                <td>Celda normal</td>
+            </tr>
+        </table>
+
+        <h2>B&#41;</h2>
+        <table border="1">
+            <tr>
+                <td rowspan="2">Esta celda tiene rowspan="2" por eso tiene fusionada la celda de abajo</td>
+                <td>Celda Normal</td>
+            </tr>
+            <tr>
+                <td>Otra celda normal</td>
+            </tr>
+        </table>
+
+        <h2>C&#41;</h2>
+        <table border="1" style="background-color: lightblue;">
+            <tr>
+                <td colspan="2">Linea1Linea2</td>
+            </tr>
+            <tr>
+                <td>Linea3</td>
+                <td>Linea4</td>
+            </tr>
+            <tr>
+                <td>Linea5</td>
+                <td rowspan="2">Linea6Linea8</td>
+            </tr>
+            <tr>
+                <td>Linea7</td>
+            </tr>
+        </table>
+
+        <h2>D&#41;</h2>
+        <table border="1">
+            <tr>
+                <td style="background-color: lightblue;">Linea1</td>
+                <td style="background-color: yellow;">Linea2</td>
+            </tr>
+            <tr>
+                <td  style="background-color: lime;">Linea3</td>
+                <td rowspan="2" style="background-color: greenyellow;">Linea4 <br> Linea6</td>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: purple;">Linea5 <br> Linea7</td>
+                <td style="background-color: bisque;">Linea8</td>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
+
+    <h2>E&#41;</h2>
+    <table border="1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td colspan="2">A</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td colspan="3">E</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <h2>
+        Ejercicio 2 <br>
+        Crea una tabla con este diseño usando los siguientes estilos css en <br>
+        style=”background-color: color” <br>
+        style=”width:100px” <br>
+        style=”width:400px” <br>
+        style=”width:80%”
+    </h2>
+    <div id="Ejercicio2">
+        <table id="tablaEj2">
+            <tr">
+                <td colspan="6" style="background-color:cyan;"><h2>Cabecera</h2></td>
+            </tr>
+            
+            <tr style="background-color: lightblue;">
+                <td colspan="2">Enlace1<br>Enlace2<br>Enlace3<br>Enlace4<br>Enlace5<br>Enlace6<br>Enlace7<br>Enlace8<br></td>
+                <td colspan="4"><h2>Contenido</h2>La tecnología ha cambiado considerablemente nuestra forma de vivir, trabajar y comunicarnos. Hace apenas unas décadas, muchas de las tareas que realizamos actualmente en cuestión de segundos requerían mucho más tiempo y esfuerzo. Hoy en día, gracias a internet y al desarrollo de nuevas herramientas digitales, podemos acceder a una enorme cantidad de información desde prácticamente cualquier lugar del mundo. <br> Uno de los sectores que más ha evolucionado es el de la programación y el desarrollo de aplicaciones web. Cada vez son más las empresas que necesitan profesionales capaces de diseñar, desarrollar y mantener páginas web y aplicaciones que faciliten la interacción con sus usuarios. Para ello, se utilizan diferentes lenguajes de programación y tecnologías, como HTML, CSS, JavaScript, Java, PHP y Python.<br></td>
+            </tr>
+
+            <tr>
+                <td colspan="6" style="background-color: orangered;">Pies</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

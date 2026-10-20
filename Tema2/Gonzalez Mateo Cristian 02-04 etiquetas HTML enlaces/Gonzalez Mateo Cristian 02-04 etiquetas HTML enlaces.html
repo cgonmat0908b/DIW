@@ -88,9 +88,110 @@
         redireccionamiento local.
     </h2>
     <div id="Ej3">
+        <p>Redirección a <a href="./news/pag1.html" target="_blank">pag1</a></p>
+        <p>Redirección a <a href="./pag2.html" target="_blank">pag2</a></p>
+    </div>
+
+    <h2>
+        Ejercicio 4 Enlaces HTML Remotos <br>
+        Crea Realiza una búsqueda a google sobre el libro 1984 y crea enlaces remotos a los cinco primeros resultados.
+    </h2>
+    <div id="Ejercicio4">
+        <p>Enlace <a href="https://es.wikipedia.org/wiki/1984_(novela)">1</a></p>
+        <p>Enlace <a href="https://www.casadellibro.com/libro-1984/9788499890944/2034881">2</a></p>
+        <p>Enlace <a href="https://www.amazon.es/1984-Contempor%C3%A1nea-CONTEMPORANEA-George-Orwell/dp/8499890946">3</a></p>
+        <p>Enlace <a href="https://www.lecturalia.com/libro/882/1984">4</a></p>
+        <p>Enlace <a href="https://www.suneo.mx/literatura/subidas/George%20Orwell%201984.pdf">5</a></p>
+    </div>
+
+    <h2>
+        Ejercicio 5 Enlaces HTML a Email <br>
+        Crea enlaces html a tu correo electrónico y al correo tunombre.apellidos@salduba.es <br>
+        Con el nombre de webmaster. ¿Que pasa si pinchamos en el? ¿Cómo podriamos modificar su comportamiento?
+    </h2>
+    <div id="Ejercicio5">
+
+        <h2>Enlaces a correos:</h2>
+        <ul>
+            <li><a href="mailto:tunombre.apellidos@salduba.es">tunombre.apellidos@salduba.es</a></li>
+            <li><a href="mailto:cgonmat0908b@g.educaand.es">cgonmat0908b@g.educaand.es</a></li>
+        </ul>
+        
+        <p>
+            1. ¿Qué pasa si pinchamos en él? <br>
+            Se abre la aplicación de correo predeterminada con la dirección del destinatario ya introducida.
+        </p>
+
+        <p>
+            2. ¿Cómo podríamos modificar su comportamiento? <br>
+            Añadiendo parámetros a mailto:, como subject para el asunto o body para el mensaje, o cambiando la aplicación de correo predeterminada.
+        </p>
         
     </div>
 
+    <h2>
+        Ejercicio 6 Enlaces HTML a archivos. <br>
+        Crea un enlace html a un fichero zip, a uno rar y a dos imagenes una gif y otra jpg. Usa google para buscarlos
+    </h2>
+    <div id="Ejercicio 6">
+        <h2>Enlace ZIP:</h2>
+        <a href="./src/ZIP.zip" download>ZIP</a>
+
+        <h2>Enlace RAR:</h2>
+        <a href="./src/RAR.rar">RAR</a>
+
+        <h2>Enlace .JPG:</h2>
+        <a href="./src/JPEG.jpg" >JPG</a>
+
+        <h2>Enlace GIF:</h2>
+        <a href="./src/giphy.gif" >GIF</a>
+        
+    </div>
+    
+    <h2>
+        Ejercicio 7 Enlaces HTML a pdf <br>
+        Crea un enlace html a un fichero pdf.
+    </h2>
+    <div id="Ejercicio7">
+        <h2>Enlace a pdf:</h2>
+        <a href="./src/a.pdf">PDF</a>
+    </div>
+
+    <h2>
+        Ejercicio 8 incrustar HTML a pdf <br>
+        Crea un pdf con el html anterior e incrustalo en la web de las tres maneras diferentes
+    </h2>
+    <div id="Ejercicio 8">
+        <h2>IFRAME PDF</h2>
+        <iframe src="./src/PaginaPDF.pdf" frameborder="0" width="300px" height="300px"></iframe><br><br>
+
+        <h2>EMBED PDF</h2>
+        <embed src="./src/PaginaPDF.pdf" type="application/pdf" width="300px" height="300px"><br><br>
+        
+        <h2>OBJECT PDF</h2>
+        <object data="./src/PaginaPDF.pdf" type="application/pdf" width="300px" height="300px"></object>
+    </div>
+
+    <h2>
+        Ejercicio 9 modificar incrustar HTML a pdf <br>
+        Crea 4 pdfs y crea enlaces para que se modifiquen con target
+    </h2>
+    <div id="Ejercicio9">
+        <h2>PDF 1:</h2>
+        <a href="./src/02-04 etiquetas HTML enlaces.pdf" target="visor">PDF 1</a>
+
+        <h2>PDF 2:</h2>
+        <a href="./src/a.pdf" target="visor">PDF 2</a>
+
+        <h2>PDF 3:</h2>
+        <a href="./src/González Mateo Cristian 00-04 Guías de Estilo y Maquetación.pdf" target="visor">PDF 3</a>
+
+        <h2>PDF 4:</h2>
+        <a href="./src/PaginaPDF.pdf" target="visor">PDF 4</a> <br><br>
+
+        <iframe name="visor" src="./src/02-04 etiquetas HTML enlaces.pdf" width="500px" height="500px"></iframe>
+    </div>
+    
 </body>
 
 </html>
