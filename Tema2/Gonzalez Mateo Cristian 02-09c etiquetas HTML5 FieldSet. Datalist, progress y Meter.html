@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: beige;
+            border-color: brown;
+            border: 1px solid red;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Cristian González Mateo</h2>
+    <h2>02-09c etiquetas HTML5 FieldSet. Datalist, progress y Meter</h2>
+
+    <h2>Ejercicio 1</h2>
+    <div id="Ejercicio1">
+        <form action="" method="get">
+            <h2>Formulario 3</h2>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="nom" id="nom"><br>
+
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="apell" id="apell"><br>
+
+                <label for="Edad">Edad</label>
+                <input type="number" min="1" name="age" id="age"><br>
+
+                <label for="">Seleccione tu satisfacción Con el concierto</label><br>
+                <input type="range" min="1" max="10" value="5" name="satisfaccion" id="satisfaccion">
+            </fieldset>
+            <button type="submit">
+                Gracias por tus Opiniones
+            </button>
+        </form>
+    </div>
+
+    <h2>
+        Ejercicio 2 <br>
+        Modifica el anterior para Crear un formulario como este usando datalist y textarea
+    </h2>
+    <div id="Ejercicio2">
+        <form action="" method="get">
+            <h2>Formulario 3</h2>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="nom" id="nom"><br>
+
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="apell" id="apell"><br>
+
+                <label for="Edad">Edad</label>
+                <input type="number" min="1" name="age" id="age"><br>
+
+                <label for="">Seleccione tu satisfacción Con el concierto</label><br>
+                <input type="range" min="1" max="10" value="5" name="satisfaccion" id="satisfaccion">
+            </fieldset>
+
+            <fieldset>
+                <legend>Concierto</legend>
+                <label for="Conciertos">Concierto al que asiste:</label>
+                <select name="" id="">
+                    <option value="" selected disabled>Pulsa para ver conciertos</option>
+                    <option value="Malu">Malu</option>
+                    <option value="Omar Montes">Omar Montes</option>
+                    <option value="Mojinos">Los Mojinos</option>
+                    <option value="Medina">Medina Azahara</option>
+                    <option value="Julio">Julio Iglesias</option>
+                </select>
+                <br>
+                <label for="Opinion">Que te pareció el concierto:</label><br>
+                <textarea name="" id="" cols="40" rows="10" placeholder="Escribe tus impresiones"></textarea>
+                <br><br>
+                <label for="">Valoración:</label>
+                <input type="text" id="valoracion" list="valoraciones" placeholder="Pulsa para ver opciones">
+                <datalist id="valoraciones">
+                    <option value="10"></option>
+                    <option value="5"></option>
+                    <option value="1"></option>
+                </datalist>
+            </fieldset>
+
+            <button type="submit">
+                Gracias por tus Opiniones
+            </button>
+        </form>
+    </div>
+
+    <h2>
+        Ejercicio 3 <br>
+        Crear un formulario como este usando datalist y la etiqueta progress. Añade un javascript para que cuando
+        pulse genera aleatorio ponga datos aleatorios en los valores del progress
+    </h2>
+    <div id="Ejercicio3">
+
+        <form action="" method="get">
+            <h2>Formulario3</h2>
+            <fieldset>
+                <legend>Genera tu personaje para el juego</legend>
+                <label for="">Nombre:</label>
+                <input type="text" name="" id="">
+                <br>
+
+                <label for="Clase">Clase:</label>
+                <select name="" id="">
+                    <option value="">Guerrero</option>
+                    <option value="">Mago</option>
+                    <option value="">Ladrón</option>
+                    <option value="">Paladín</option>
+                </select>
+                <br>
+
+                <label for="">Escoge la edad</label>
+                <input type="range" min="15" max="200" name="" id=""><br>
+                <br><br>
+
+                <button type="button" onclick="cambio()"> Genera tu personaje </button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del personaje</legend>
+                <label for="">Fuerza</label><br>
+                <progress min="1" max="100" value="50" name="Fuerza" id="Fuerza"></progress><br>
+
+                <label for="">Velocidad</label><br>
+                <progress min="1" max="100" value="50" name="Velocidad" id="Velocidad"></progress><br>
+
+                <label for="">Persuasión</label><br>
+                <progress min="1" max="100" value="50" name="Persuasion" id="Persuasion"></progress><br>
+
+                <label for="">Espionaje</label><br>
+                <progress min="1" max="100" value="50" name="Espionaje" id="Espionaje"></progress><br>
+            </fieldset>
+
+        </form>
+
+        <script>
+            function cambio() {
+                document.getElementById("Velocidad").value = Math.random() * 100;
+                document.getElementById("Fuerza").value = Math.random() * 100;
+                document.getElementById("Persuasion").value = Math.random() * 100;
+                document.getElementById("Espionaje").value = Math.random() * 100;
+            }
+        </script>
+    </div>
+
+
+    <div id="Ejercicio4">
+
+        <form action="" method="get">
+            <h2>Formulario 4</h2>
+
+            <fieldset>
+                <legend>Genera tu personaje para el juego</legend>
+
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre">
+                <br>
+
+                <label for="Clase">Clase:</label>
+                <input type="text" id="Clase" name="Clase" list="clases">
+
+                <datalist id="clases">
+                    <option value="Guerrero">
+                    <option value="Mago">
+                    <option value="Ladrón">
+                    <option value="Paladín">
+                </datalist>
+                <br>
+
+                <label for="Edad">Escoge la edad:</label>
+                <input type="range" min="15" max="200" name="Edad" id="Edad">
+                <br>
+
+                <label for="Valoracion">Valoración (0-100):</label>
+                <input type="text" id="Valoracion"
+                    onchange="asignarClase()">
+                <br><br>
+
+                <button type="button" onclick="cambio4()">
+                    Genera tu personaje
+                </button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del personaje</legend>
+
+                <label for="Fuerza4">Fuerza</label><br>
+                <meter min="1" max="100" value="50"
+                    id="Fuerza4"></meter><br>
+
+                <label for="Velocidad4">Velocidad</label><br>
+                <meter min="1" max="100" value="50"
+                    id="Velocidad4"></meter><br>
+
+                <label for="Persuasion4">Persuasión</label><br>
+                <meter min="1" max="100" value="50"
+                    id="Persuasion4"></meter><br>
+
+                <label for="Espionaje4">Espionaje</label><br>
+                <meter min="1" max="100" value="50"
+                    id="Espionaje4"></meter><br>
+            </fieldset>
+        </form>
+
+        <script>
+            function cambio4() {
+                document.getElementById("Velocidad4").value =
+                    Math.floor(Math.random() * 100) + 1;
+
+                document.getElementById("Fuerza4").value =
+                    Math.floor(Math.random() * 100) + 1;
+
+                document.getElementById("Persuasion4").value =
+                    Math.floor(Math.random() * 100) + 1;
+
+                document.getElementById("Espionaje4").value =
+                    Math.floor(Math.random() * 100) + 1;
+            }
+
+            function asignarClase() {
+                let texto = document.getElementById("Valoracion").value;
+                let valor = Number(texto);
+
+                if (texto.trim() === "" || !Number.isFinite(valor)
+                    || valor < 0 || valor > 100) {
+                    alert("Introduce una valoración entre 0 y 100");
+                    return;
+                }
+
+                if (valor <= 25) {
+                    document.getElementById("Clase").value = "Ladrón";
+                } else if (valor <= 50) {
+                    document.getElementById("Clase").value = "Guerrero";
+                } else if (valor <= 75) {
+                    document.getElementById("Clase").value = "Mago";
+                } else {
+                    document.getElementById("Clase").value = "Paladín";
+                }
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>
