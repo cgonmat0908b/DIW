@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset{
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Cristian González Mateo</h2>
+    <h2>02-09b etiquetas HTML5  Botones . Combobox y textareas</h2>
+<br><br>
+    <h2>
+        Ejercicio 1.Crea un botón moderno Con un texto que diga "Gracias por pulsarme" con este evento
+        onclick="alert(' Gracias por pulsarme');"
+    </h2>
+    <div id="Ejercicio1">
+        <button onclick="alert(' Gracias por pulsarme');">
+            <b>Pulsame</b>
+        </button>
+    </div>
+
+    <h2>
+        Ejercicio 2. Crea un botón moderno con una imagen png ojo para que quede asi debes modificar la
+        propiedad css de alineación del texto
+    </h2>
+    <div id="Ejercicio2">
+        <button style="display: flex; justify-content: center; align-items: center;">
+            <b>Pulsa Aquí</b>
+            <img src="./imgs/diana.webp" alt="" width="50px" height="50px">
+        </button>
+    </div>
+    
+    <h2>
+        Ejercicio 3.
+        Crea un cuadro combinado como los de la imagen
+    </h2>
+    <div id="Ejercicio3" style="width: 200px; border: 3px solid blue;">
+        
+        <p>Selecciona un un Pueblo Blanco de Málaga</p>
+
+        <select name="select" id="select">
+            <option value="Benao">Benaoján</option>
+            <option value="Monteja">Montejaque</option>
+            <option value="Ataja">Atajate</option>
+            <option value="Jime">Jimera de Libar</option>
+            <option value="Benado">Benadalid</option>
+            <option value="Algato">Algatocín</option>
+            <option value="Gau">Gaucín</option>
+            <option value="Zamo">Zamora</option>
+        </select>
+        <button type="submit">
+            enviar
+        </button>
+    </div>
+
+    <h2>
+        Ejercicio 4. Crea un cuadro combinado como los de la imagen
+    </h2>
+
+    <div id="Ejercicio4" style="width: 350px; border: 3px solid blue;">
+        
+        <p>Selecciona un un Pueblo Blanco de Málaga o Cádiz</p>
+
+        <select name="select2" id="select2">
+            <optgroup label="Málaga">
+                <option value="Benao">Benaoján</option>
+                <option value="Monteja">Montejaque</option>
+                <option value="Ataja">Atajate</option>
+                <option value="Jime">Jimera de Libar</option>
+                <option value="Benado">Benadalid</option>
+                <option value="Algato">Algatocín</option>
+                <option value="Gau">Gaucín</option>
+                <option value="Zamo">Zamora</option>
+            </optgroup>
+
+            <optgroup label="Cádiz">
+                <option value="Arcos">Arcos de la frontera</option>
+                <option value="Barnos">Barnos</option>
+                <option value="Algo">Algodonales</option>
+                <option value="Villa">Villamartín</option>
+                <option value="Oli">Olivera</option>
+            </optgroup>
+        </select>
+        <button type="submit">
+            enviar
+        </button>
+    </div>
+
+    <h2>
+        Ejercicio 5. Crea un Cuadro de texto multilínea con estas características : El cuadro debe
+        adquirir el foco en cuanto carga la página. Con un tamaño maximo de 50 caracteres y anchura 10
+        columnas y 5 filas Debe tener de placeholder la cadena "Escribe tus impresiones" y debe ser
+        obligatorios
+    </h2>
+    <div id="Ejercicio5">
+        <textarea name="" id="" rows="5" cols="10" maxlength="50" autofocus placeholder="Escribe tus impresiones" required></textarea>
+        <br><button type="submit">
+            enviar
+        </button>
+    </div>
+
+    <h2>Ejercicio 6. Todo junto crea un formulario con este aspecto con estas especificaciones</h2>
+    <div id="Ejercicio6">
+        <form action="" method="get">
+            
+            <fieldset>
+                <h2>1. Botones ('&lt;button>')</h2>
+                <legend>Formulario de ejemplo</legend>
+                <label for="nombre"><b>Nombre</b></label><br>
+                <input type="text" name="nombre" id="nom" placeholder="Ej: Ana"><br>
+                <button type="submit">Enviar(submit)</button>
+                <button type="reset">Limpiar(reset)</button>
+                <button type="button" disabled>Botón deshabilitado</button>
+                <button type="button" onclick="document.getElementById('nombre').focus()">Atención(autofocus)</button>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <h2>2. Barra de progreso ('&lt;button>')</h2>
+                <label for="archivoSubida">Subida de archivo(simulada)</label>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
