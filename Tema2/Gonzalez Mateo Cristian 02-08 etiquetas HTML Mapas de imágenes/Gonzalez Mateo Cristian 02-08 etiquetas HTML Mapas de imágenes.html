@@ -24,8 +24,102 @@
             <area shape="rect" coords="248,216,445,281" href="./imgs/IMG1.png" alt="">
         </map>
     </div>
+
+    <h2>Ejercicio 2 Mapa de imágenes Circulos</h2>
+    <div id="Ejercicio2">
+        <img src="./imgs/Circulos.png" alt="" usemap="#Ej2">
+        <map name="Ej2">
+            <area shape="circle" coords="91,52,16" href="./imgs/Circulos.png">
+            <area shape="circle" coords="143,52,16" href="./imgs/Circulos.png">
+            <area shape="circle" coords="195,52,16" href="./imgs/Circulos.png">
+            <area shape="circle" coords="247,52,16" href="./imgs/Circulos.png">
+        </map>
+    </div>
     
-    
+    <h2>Ejercicio 3 Mapa de imágenes Poly</h2>
+    <div id="Ejercicio3">
+        <img src="./imgs/MapAnda.png" usemap="#Ej3">
+        <map name="Ej3">
+            <area shape="poly" coords="229,128,224,83,248,58,323,97,338,122,284,126" href="https://es.wikipedia.org/wiki/La_Axarqu%C3%ADa">
+        </map>
+    </div>
+
+    <h2>
+        Ejercicio 4 <br>
+        Usa la herramienta https://image-map.weebly.com para generar este mapa de Europa
+    </h2>
+    <div id="Ejercicio4">
+        <img src="./imgs/Mapa político de Europa en español.png" id="map-image" style="width: 1448px; max-width: 100%; height: auto;" alt="" usemap="#map" />
+        <map name="map">
+            <area shape="poly" coords="299, 714, 332, 639, 285, 581, 289, 558, 337, 554, 366, 546, 456, 527, 477, 550, 502, 583, 549, 609, 529, 639, 478, 668, 490, 683, 482, 705, 488, 721, 487, 744, 459, 760, 407, 739, 390, 761" href="https://es.wikipedia.org/wiki/Francia" />
+            <area shape="poly" coords="108, 833, 130, 871, 204, 872, 245, 855, 271, 833, 271, 814, 346, 783, 393, 778, 389, 759, 301, 713, 163, 646, 113, 654, 113, 682, 161, 705, 167, 714, 145, 736, 142, 763, 124, 767, 127, 793, 106, 819" href="https://es.wikipedia.org/wiki/Espa%C3%B1a" />
+            <area shape="poly" coords="55, 820, 81, 776, 65, 776, 74, 746, 112, 683, 123, 686, 127, 695, 152, 699, 168, 709, 162, 721, 148, 730, 151, 742, 141, 751, 144, 761, 126, 767, 127, 785, 118, 801, 105, 833, 82, 832" href="https://es.wikipedia.org/wiki/Portugal" />
+        </map>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="imageMapResizer.min.js"></script>
+        <script>$(document).ready(function(e){$("map").imageMapResize();});</script>
+    </div>
+
+    <h2>
+        Ejercicio 5 <br>
+        Usa la libreria de jQuery RWD Image Maps para hacer responsive los anteriores mapas
+    </h2>
+        
+    <div id="Ejercicio5">
+
+        <img
+            src="./imgs/Mapa político de Europa en español.png"
+            width="1448"
+            height="1086"
+            style="max-width: 100%; height: auto;"
+            alt="Mapa político de Europa"
+            usemap="#map"
+        >
+
+        <map name="map">
+
+            <!-- Francia -->
+            <area
+                shape="poly"
+                coords="299,714,332,639,285,581,289,558,337,554,366,546,456,527,477,550,502,583,549,609,529,639,478,668,490,683,482,705,488,721,487,744,459,760,407,739,390,761"
+                href="https://es.wikipedia.org/wiki/Francia"
+                alt="Francia"
+            >
+
+            <!-- España -->
+            <area
+                shape="poly"
+                coords="108,833,130,871,204,872,245,855,271,833,271,814,346,783,393,778,389,759,301,713,163,646,113,654,113,682,161,705,167,714,145,736,142,763,124,767,127,793,106,819"
+                href="https://es.wikipedia.org/wiki/Espa%C3%B1a"
+                alt="España"
+            >
+
+            <!-- Portugal -->
+            <area
+                shape="poly"
+                coords="55,820,81,776,65,776,74,746,112,683,123,686,127,695,152,699,168,709,162,721,148,730,151,742,141,751,144,761,126,767,127,785,118,801,105,833,82,832"
+                href="https://es.wikipedia.org/wiki/Portugal"
+                alt="Portugal"
+            >
+
+        </map>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Librería jQuery RWD Image Maps -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+    <!-- Activar mapas responsive -->
+    <script>
+        $(document).ready(function() {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+    </div>
 
 </body>
 

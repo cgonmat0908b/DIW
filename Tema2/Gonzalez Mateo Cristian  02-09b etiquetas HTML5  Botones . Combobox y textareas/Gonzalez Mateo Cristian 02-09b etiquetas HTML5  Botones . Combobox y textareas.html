@@ -17,7 +17,7 @@
 
     <h2>Cristian González Mateo</h2>
     <h2>02-09b etiquetas HTML5  Botones . Combobox y textareas</h2>
-<br><br>
+    <br><br>
     <h2>
         Ejercicio 1.Crea un botón moderno Con un texto que diga "Gracias por pulsarme" con este evento
         onclick="alert(' Gracias por pulsarme');"
@@ -112,7 +112,7 @@
     <div id="Ejercicio6">
         <form action="" method="get">
             
-            <fieldset>
+            <fieldset  style="border: 2px solid black;">
                 <h2>1. Botones ('&lt;button>')</h2>
                 <legend>Formulario de ejemplo</legend>
                 <label for="nombre"><b>Nombre</b></label><br>
@@ -127,6 +127,76 @@
             <fieldset>
                 <h2>2. Barra de progreso ('&lt;button>')</h2>
                 <label for="archivoSubida">Subida de archivo(simulada)</label>
+                <progress value="70" max="100"></progress>
+                <p>Progreso: 70% (valor: 70 / max: 100)</p>
+                <hr>
+                <p>Progreso indeterminado</p>
+                <progress></progress>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>3. Indicador('&lt;meter>')</h2>
+                <label for="NivelBat">Nivel de bateria</label><br>
+                <meter value="50" max="100"></meter><br>
+                <label for="Ocupación">Ocupacción de sala</label><br>
+                <meter value="90" max="100"></meter><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>5. Datalist</h2>
+                <label for="ciudad">Ciudad(sugerencias)</label><br>
+                <input list="ciudades" id="ciudad" placeholder="Escribe o elige">
+
+                <datalist id="ciudades">
+                    <option value="Madrid"></option>
+                    <option value="Barcelona"></option>
+                    <option value="Valencia"></option>
+                    <option value="Sevilla"></option>
+                    <option value="Bilbao"></option>
+                </datalist>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>6. Area de texto ('&lt;textarea>')</h2>
+                <p>Comentame algo</p>
+                <textarea name="ContenidoLargo" id="ContenidoLargo" cols="100" rows="10" placeholder="Escribe algo bonito"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>7. Select</h2>
+                <p>Idiomas que conoces(múltiple)</p>
+                <select name="idiomas" id="idioma" multiple>
+                    <option value="Español">Español</option>
+                    <option value="Inglés">Inglés</option>
+                    <option value="Francés">Francés</option>
+                    <option value="Alemán">Alemán</option>
+                </select>
+                <p>Elige un curso</p>
+                <select name="" id="">
+                    <option value="">-- selecciona --</option>
+                    <optgroup label="Redes">
+                        <option value="Planificación">Planificación de subredes</option>
+                        <option value="Protocolos">Redes y protocolos</option>
+                    </optgroup>
+                    <optgroup label="Frontend">
+                        <option value="HTML5">HTML5 Avanzado</option>
+                        <option value="CSS">CSS Moderno</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset style="border: 2px solid black;">
+                <h2>8. Resultado ('&lt;output>')</h2>
+                <legend>Resumen de pedido(ejemplo sin JS)</legend>
+                <label for="Items">Items</label><br>
+                <input type="number" min="1" max="5" name="Cantidad" id="Cantidad" value="3"><br>
+                <label for="Precio">Precio total(EUR)</label><br>
+                <input type="number" min="1" max="150" name="Precio" id="Precio" value="42.50"><br>
+                <label for="Subtotal">Subtotal mostrado(output)</label>
+                <output>
+                    42.50
+                </output><br>
+                <button type="submit">Enviar pedido</button>
             </fieldset>
         </form>
     </div>
