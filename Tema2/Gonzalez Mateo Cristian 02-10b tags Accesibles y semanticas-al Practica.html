@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página Web No Accesible</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        body {
+            background-color: #F2F2F2; /* Fondo gris claro */
+            color: #333333; /* Texto gris oscuro */
+            font-family: Arial, sans-serif; /* Fuente de texto */
+        }
+
+        /* Contenido principal */
+        #main-content {
+            background-color: #ffffff;
+            color: #222222;
+        }
+
+        /* Menú lateral */
+        #sidebar {
+            background-color: #f2f2f2;
+            color: #222222;
+        }
+
+        /* Enlaces */
+        #sidebar a {
+            color: #004080;
+        }
+
+        /* Botones de compra */
+        button {
+            background-color: #004080;
+            color: #ffffff;
+        }
+    </style>
+
+    <body>
+
+        <h2>Cristian González Mateo</h2>
+        <h2>02-10b tags Accesibles y semanticas-al Practica</h2>
+
+        <header>
+            <div style="font-size:24">¡Bienvenido a Nuestra Web!</div>
+        </header>
+
+        <div id="content">
+            <nav="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav=>
+
+            <main id="main-content">
+                <h1>Nuestros Productos</h1>
+                <p>¡Echa un vistazo a nuestros productos increíbles!</p>
+
+                <div class="product">
+                    <img src="product1.jpg" />
+                    <div style="font-size:15">Producto 1</div>
+
+                    <table width="300px">
+                        <tr>
+                            <td>Ejemplo1</td>
+                            <td>Ejemplo2</td>
+                        </tr>
+                    </table >
+
+                    <p>Descripción del producto 1.</p>
+                    <button type="button" aria-label="Descripcion Producto 1" onclick="comprarProducto(1)">Comprar</button>
+
+                    <aside id="secondary-content">
+                        > Contenido secundario
+                    </aside>
+                </div>
+
+                <div class="product">
+                    <img src="product2.jpg" />
+                    <div style="font-size:15">Producto 1</div>
+                    <p>Descripción del producto 2.</p>
+                    <button type="button" aria-label="Comprar Producto 2" onclick="comprarProducto(2)">Comprar</button>
+                </div>
+            </main>
+        </div>
+
+        <div id="footer">
+            <p>Todos los derechos reservados &copy; 2023</p>
+        </div>
+
+        <br><br><br>
+        <h2>
+            1. Cambia los Elementos semánticos como &lt;header>, &lt;nav>, &lt;main>, &lt;aside>
+            en lugar de divs genéricos
+        </h2>
+
+        <h2>
+            2. Los botones de compra utilizan eventos onclick en lugar de etiquetas &lt;button> con
+            atributos accesibles, lo que hace que no sean fácilmente utilizables por personas que
+            dependen de lectores de pantalla.
+        </h2>
+
+        <h2>
+            3. Arregla el el contraste de color adecuado, que dificulta la legibilidad del contenido para
+            personas con discapacidades visuales.
+        </h2>
+        
+        <h2>
+            4. Cambia el contenido fijo, como "¡Bienvenido a Nuestra Web!" que puede ser difícil de
+            escalar o adaptar para diferentes necesidades de visualización.
+        </h2>
+        Por aquí
+        <h2>
+            5. Añade un atributo role donde sea necesarios (puedes añadir codigo si no ves ningun sitio
+            claro donde ponerlo)
+        </h2>
+
+        <h2>
+            6. Añade un atributo aria-labelledby en algun lugar que pueda ser necesario (puedes
+            añadir codigo si no ves ningun sitio claro donde ponerlo)
+        </h2>
+
+        <h2>
+            7. Añade un atributo aria-labelled en algun lugar que pueda ser necesario(puedes añadir
+            codigo si no ves ningun sitio claro donde ponerlo)
+        </h2>
+
+        <h2>
+            8. Añade un atributo aria-selected="true" en algun lugar que pueda ser necesario(puedes
+            añadir codigo si no ves ningun sitio claro donde ponerlo)
+        </h2>
+
+        <h2>
+            9. Añade un atributo aria-controls="tabpanel-id" en algun lugar que pueda ser
+            necesario(puedes añadir codigo si no ves ningun sitio claro donde ponerlo)
+        </h2>
+    </body>
+</html>
+
