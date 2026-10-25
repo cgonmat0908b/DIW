@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #Ej1{
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            height: 1000px;
+        }
+
+        #Ej1 td{
+            border: 1px solid black;
+            
+        }
+        
+        .encabezado{
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #Header{
+            width: 100%;
+            height: 15%;
+        }
+        
+
+        #Cuerpo{
+            height: 70%;
+            width: 100%;
+        }
+
+        #Nav{
+            width: 20%;
+            text-align: center;
+        }
+
+        #Contenido{
+            width: 80%;
+            text-align: center;
+        }
+
+        #Pie{
+            width: 100%;
+            height: 15%;
+        }
+
+        .pies{
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>González Mateo Cristian</h2>
+    <h2>02-11 etiquetas HTML  Google Maps</h2>
+
+    <h2>
+        Ejercicio 4. Crea dos panorámicas con google street view de la ciudad que mas te guste e insertala en
+        tu web con un iframe
+    </h2>
+    
+    <table id="Ej1">
+
+        <tr id="Header">
+            <td class="encabezado" colspan="2">Bienvenido</td>
+        </tr>
+
+        <tr id="Cuerpo">
+
+            <td id="Nav">
+                Menu de navegación
+            </td>
+
+            <td id="Contenido">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m0!4v1500051058294!6m8!1m7!1sFp8Ep09WwvdXbF0ip7jhPA!2m2!1d37.38368931427712!2d-5.990540296841858!3f82.6!4f0!5f0.7820865974627469"
+                width="40%"
+                height="400"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+                </iframe>
+
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2ses!4v1496849410092!6m8!1m7!1sF%3A--syVDq7kbZA%2FWScNxWlPkPI%2FAAAAAAAAAdQ%2FX1oqCni7kU8R79A8u2dYGHVQrrbwljNXQCLIB!2m2!1d37.38292325481782!2d-5.985915027558804!3f343.99992787351465!4f-16.0061873298461!5f0.7820865974627469"
+                width="40%"
+                height="400"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+                </iframe>
+
+            </td>
+
+        </tr>
+
+        <tr id="Pie">
+            <td class="pies" colspan="2">Pie de página</td>
+        </tr>
+
+    </table>
+    
+</body>
+
+</html>
