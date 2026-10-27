@@ -9,6 +9,24 @@
     <meta name="keywords" content="Next.js, React, Vercel, JavaScript, frameworks, desarrollo web, front-end">
     <meta name="author" content="Cristian Gonzalez Mateo">
 
+    <style>
+        div {
+        font-family:fantasy; width: 650px; margin-left:auto ; margin-right:auto; background-color: lightcyan;
+        border: 1px solid blue; border-radius:6px ; }
+
+        h1 {text-align:center}
+
+        legend { color: #00A;}
+
+        td {vertical-align: top;}
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -272,8 +290,8 @@
                                 )
                             }
                         }
-                    </script></pre>
-                </code>
+                    &lt;/script>
+                </pre></code>
             </p>
         </li>
 
@@ -285,6 +303,31 @@
 
     <a href="mailto:a@a.com?subject=examen&bcc=b@b.cp">a@a.com</a><br>
     <a href="tel:1004">1004</a>
+
+    <h2>5. Imagenes</h2>
+    <a href="accion.php">
+        <img src="./Captura desde 2026-10-27 15-36-47.png" alt="Mapa de el señor de los anillos" title="Mapa señor de los anillos" loading="lazy" ismap width="136" height="215">
+    </a>
+
+    <a href="accion.php">
+        <img src="./Captura desde 2026-10-27 15-36-47.png" alt="Mapa de el señor de los anillos" title="Mapa señor de los anillos" loading="lazy" ismap width="136" height="215">
+    </a>
+
+    <h2>6. Mapa de imagenes</h2>
+    <img src="./Captura desde 2026-10-27 15-36-47.png" alt="" usemap="#mapa">
+    <map name="mapa">
+        <area shape="circle" coords="93,45,69" alt="" href="https://en.wikipedia.org/wiki/Rohan,_Middle-earth" title="Rohan">
+        <area shape="rect" coords="108,80,181,237" alt="" href="https://en.wikipedia.org/wiki/Lorien_Legacies" title="Lorien">
+        <area shape="circle" coords="40,198,20"  alt="" href="https://es.wikipedia.org/wiki/Fangorn" title="Fangorn">
+        <area shape="circle" coords="174,243,18"  alt="" href="https://es.wikipedia.org/wiki/Mordor" title="Mordor">
+        <area shape="poly" coords="129,284,85,337,49,393,22,355,49,324,31,298,76,288,91,264" alt="" href="https://es.wikipedia.org/wiki/Gondor" title="Gondor"> 
+    </map>
+
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+    <script>
+        imageMapResize();
+    </script>
 
     <h1>7. Tablas</h1>
 
@@ -420,6 +463,7 @@
             </tr>
 
         </table>
+        
 
         <h2>8. Google Maps</h2>
 
@@ -427,11 +471,125 @@
 
         <h2>9. Formularios</h2>
 
-        <table>
-            
-        </table>
+        
+        <div>
+            <h1>Formuario Examen</h1>
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Usuario</legend>
+
+                                <label for="Alias">Alias</label><br>
+                                <input type="text" name="" id="" placeholder="tamaño máximo alias 30 caracteres"><br>
+                                
+                                <label for="">Apellidos:</label>
+                                <input type="text"><br>
+
+                                <label for="">Nombre:</label>
+                            <input type="text">
+                            </fieldset>
+
+                        </td>
+
+                        <td>
+                            <fieldset>
+                                <legend>Datos de contacto</legend>
+                                
+                                <label for="tlf">Telefono</label>
+                                <input type="tel"><br>
+
+                                <label for="mail">Email</label>
+                                <input type="email" name="" id=""><br>
+
+                                <label for="fechaNacim">Fecha nacimiento</label>
+                                <input type="date">
+                            <fieldset>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Solicitud cita</legend>
+
+                                <label for="horaCita">Hora cita</label>
+                                <input type="time" name="" id=""><br>
+
+                                <label for="formalidad">Formalidad Desedada del Asistente</label><br>
+                                -<input type="range" min="1" max="10" value="5" name="" id="">+<br>
+
+                                <label for="sedes">Sedes Disponibles</label><br>
+                                <select name="sedes" id="sedes">
+                                    <option value="" disabled selected>Pulsa para ver concierto</option>
+                                    <option value="mal">Málaga</option>
+                                    <option value="churr">Churriana</option>
+                                    <option value="torr">Torremolinos</option>
+                                </select>
+
+                            </fieldset>
+                        </td>
+
+                        <td>
+                            <fieldset>
+                                <legend>Información Adicional</legend>
+                                
+                                <label for="opinion">Que te pareció el concierto</label><br>
+                                <textarea name="" id="" placeholder="Escribe tus impresiones"></textarea><br><br>
+
+                                <label for="valoracion">Valoración</label>
+                                <input type="text" list="valores" placeholder="Escoge el valor">
+                                <datalist id="valores">
+                                    <option value="1">1</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                </datalist>
+
+                            </fieldset>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button type="submit">Enviar</button>
+                        </td>
+
+                        <td>
+                            <fieldset>
+                                <legend>Progresos</legend>
+
+                                <label for="Progresos del formulario">Progresos del formulario</label><br>
+                                <progress value="70" max="100"></progress>
+
+                                <label for="meter">meter de la encuesta</label>
+                                <meter value="20" min="0" max="100"></meter>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
 
     </table>
+
+    <h2>10. PDF</h2>
+
+    <p>IFRAME</p>
+    <iframe name="visor" src="./Examen 02 html 2025.pdf" frameborder="0" width="300px" height="300px">
+
+    </iframe><br>
+
+    <p>EMBED</p>
+    <embed src="./Examen 02 html 2025.pdf" type="application/pdf" width="300px" height="300px"><br>
+
+    <p>OBJECT</p>
+    <object data="./Examen 02 html 2025.pdf" type="application/pdf" width="300px" height="300px"></object><br>
+
+    <p>Enlaces</p>
+    <a href="./Examen 02 html 2025.pdf" target="visor">PDF 1</a><br>
+    <a href="./Examen 02 html 2025.pdf" target="visor">PDF 2</a><br>
+    <a href="./Examen 02 html 2025.pdf" target="visor">PDF 3</a><br>
 
 </body>
 
