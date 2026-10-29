@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body { font-family: Arial; margin: 20px; }
+    header { background: #234; color: white; padding: 20px; }
+    nav { background: #ddd; padding: 15px; }
+    nav button { display: inline; margin-right: 20px; cursor: pointer; }
+    h1 { font-size: 28px; font-weight: bold; }
+    h2 { font-size: 21px; font-weight: bold; }
+    article { border: 1px solid #aaa; padding: 15px; margin: 10px 0; }
+    button { background: #246; color: white; padding: 8px; cursor: pointer; }
+    footer { background: #234; color: white; padding: 20px; }
+  </style>
+</head>
+
+<body>
+    <h1> Diseño de Interfaces Web </h1>
+    <h1> Examen html </h1>
+    <h2> Examen-ej10-Accesibilidad </h2>
+    <h1>Nombre : Cristian González Mateo</h1>
+
+
+  <header><!--div cabecera a etiqueta header-->
+    <h1>Biblioteca Digital Playamar</h1> <!--Div titulo a h1-->
+    <p>Tu biblioteca de recursos educativos</p><!-- Div normal a parrafo -->
+    <img src="imgs/logo.jpg" width="100">
+  </header>
+
+  <nav><!-- div menu a etiqueta nav-->
+    <button onclick="location.href='index.html'">Inicio</button><!-- div onClick a button-->
+    <button onclick="location.href='index.html'">Catálogo</button><!-- div onClick a button-->
+    <button onclick="location.href='index.html'">Préstamos</button><!-- div onClick a button-->
+    <button onclick="location.href='index.html'">Contacto</button><!-- div onClick a button-->
+  </nav>
+
+  <main><!-- Div contenido a etiqueta main-->
+
+    <h1>Bienvenido a nuestra biblioteca</h1><!-- div titulo a h1-->
+    <p>
+      Consulta nuestro catálogo de libros y recursos digitales. <!--div normal a p-->
+    </p>
+
+    <h2>Libros destacados</h2><!-- div subtitulo a h2-->
+
+
+    <article> <!-- div libro a article-->
+      <img src="imgs/html.jpg" width="120">
+      <h2>Aprende HTML5</h2><!--div subtitulo a h2-->
+      <p>Autor: Juan Pérez</p><!-- div a p-->
+      <p>Manual de desarrollo web moderno.</p><!-- div a p-->
+      <button onclick="location.href='index.html'"><!-- div onClick a button-->
+        Ver libro
+      </button>
+    </article>
+
+    <article> <!-- div libro a article-->
+      <img src="imgs/css.jpg" width="120">
+      <h2>Diseño con CSS</h2><!-- div subtitulo a h2-->
+      <p>Autora: Ana García</p><!-- div a p-->
+      <p>Guía práctica de diseño web.</p><!-- div a p-->
+      <button onclick="location.href='index.html'"><!-- div onClick a button-->
+        Ver libro
+      </button>
+    </article>
+
+    <h2>Buscar libros</h2><!--div subtitulo a h2-->
+
+    <div>
+      <div>Introduce el título del libro:</div>
+      <input type="text" id="busqueda">
+      <div class="boton" onclick="buscar()">Buscar</div>
+    </div>
+
+    <div class="subtitulo">Solicitar información</div>
+
+    <form><!-- div normal a etiqueta form-->
+      <label for="nom">Nombre completo</label><!-- div normal a label-->
+      <input type="text" id="nombre"><br>
+
+      <label for="mail">Correo electrónico</label><!-- div normal a label-->
+      <input type="text" id="email"><br>
+
+      <label for="consulta">Tipo de consulta</label><br><!-- div normal a label-->
+      <select id="consulta">
+        <option>Selecciona una opción</option>
+        <option>Préstamos</option>
+        <option>Devoluciones</option>
+        <option>Otros</option>
+      </select><br>
+
+      <label for="msg">Mensaje</label><br><!-- div normal a label-->
+      <textarea id="mensaje"></textarea><br>
+
+      <button onclick="enviar()">Enviar solicitud</button><!--div boton a button-->
+    </form>
+
+  </main>
+
+  <aside><!--div lateral a aside-->
+    <h2>Noticias de la biblioteca</h2><!-- div subitulo a h2-->
+    <p>Nuevo horario de apertura</p><!-- div normal a p-->
+    <p>Ampliación del catálogo digital</p><!-- div normal a p-->
+
+    <h2>Enlaces de interés</h2><!-- div subitulo a h2-->
+    <a href="">Ministerio de Educación</a><br><!-- div normal a h-->
+    <a href="">Bibliotecas de Andalucía</a><!-- div normal a p-->
+  </aside>
+
+  <footer><!--div pie a footer-->
+    <p>Biblioteca Digital Playamar - 2026</p><!--div normal a p-->
+    <p>Correo: biblioteca@playamar.es</p><!--div normal a p-->
+    <p>Todos los derechos reservados</p><!--div normal a p-->
+  </footer>
+
+
+
+</body>
+
+</html>

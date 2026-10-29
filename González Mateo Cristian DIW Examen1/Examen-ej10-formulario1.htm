@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Examen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            border: 2px solid #0000ff;
+            background-color: #e0f7fa;
+            padding: 20px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Impact', sans-serif;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        fieldset {
+            border: 1px solid #7f7f7f;
+            border-radius: 0px;
+            padding: 12px;
+            margin-bottom: 5px;
+            background-color: transparent;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #0000ff;
+            font-size: 16px;
+            padding: 0 5px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 4px 6px;
+            border: 1px solid #767676;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 70px;
+            resize: vertical;
+        }
+
+        .range-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Estilos de barras de progreso y meters */
+        progress, meter {
+            width: 100%;
+            height: 12px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .actions {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-submit {
+            background-color: #000000;
+            color: #ccff00;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 30px;
+            border-radius: 20px;
+            border: 2px solid #7f7f7f;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+        .img1 { 
+
+
+        }
+    </style>
+</head>
+<body>
+
+     <h1> Diseño de Interfaces Web </h1>
+    <h1> Ejercicio 9 formulario </h1>
+    <h1>Nombre : Cristian González Mateo</h1>
+<br>
+<div class="container">
+       <img src="imgs/form.jpg" class="form-group"></div>
+       
+       <br>
+       
+       <br>
+       
+       <br>
+
+<div class="container">
+   
+
+       <br>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+         <h1> Formulario de Examen </h1>
+        <div class="grid">
+            
+            <!-- Sección Usuario -->
+            <fieldset>
+
+                <legend>Usuario</legend>
+
+                <div class="form-group">
+                    <label for="alias">Alias:</label><br>
+                    <input type="text" name="alias" id="alias" placeholder="tamaño máximo alias 30 caracteress">
+                </div>
+
+                <div class="form-group">
+                    <label for="apell">Apellidos:</label><br>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">Nombre:</label><br>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+            </fieldset>
+
+            <!-- Sección Datos de Contacto -->
+            <fieldset> 
+
+                <legend>Datos de Contacto</legend>
+
+                <div class="form-group">
+                    <label for="tlf">Telefono</label><br>
+                    <input type="tel" name="tlf" id="tlf">
+                </div>
+
+                <div class="form-group">
+                    <label for="mail">Email</label><br>
+                    <input type="email" name="mail" id="mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="nacim">Fecha nacimiento:</label><br>
+                    <input type="date" name="fechaNacim" id="fechaNacim">
+                </div>
+            </fieldset>
+
+            <!-- Sección Solicitud Cita -->
+            <fieldset>
+           
+                <legend>Solicitud cita</legend>
+
+                <div class="form-group">
+                    <label for="hora">Hora cita</label><br>
+                    <input type="time" name="hora" id="hora">
+                </div>
+
+                <div class="form-group">
+                    <label for="formalidad">Formalidad Deseada del Asistente</label><br>
+                    -<input type="range" min="1" max="10" value="5" name="" id="">+
+                </div>
+
+                <div class="form-group">
+                    <label for="sedes">Sedes Disponibles</label><br>
+                    <select name="sedes" id="sedes">
+                        <option value="ver" disabled selected>Pulsa para ver concierto</option>
+                        <option value="mg">Málaga</option>
+                        <option value="ch">Churriana</option>
+                        <option value="tr">Torremolinos</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Sección Información Adicional -->
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <div class="form-group">
+                    <label for="opinion">Que te parecio el concierto:</label><br>
+                    <textarea name="impresiones" id="impresiones" placeholder="Escribe tus impresiones"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="valoracion">Valoración:</label>
+                    <input type="text" list="valores" placeholder="Escoge el valor">
+                    <datalist id="valores">
+                        <option value="Muy bueno"></option>
+                        <option value="Estuvo bien"></option>
+                        <option value="No me gustó"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <!-- Sección Progresos -->
+            <fieldset class="full-width">
+                <legend>Progresos</legend>
+                <div class="form-group">
+                    
+                    <label for="Progresos del formulario">Progresos del formulario</label><br>
+                    <progress value="70" max="100"></progress>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="meterForm">Meter de la encuenta</label>
+                    <meter value="20" min="0" max="100"></meter>
+                </div>
+            </fieldset>
+
+            <!-- NUEVA Sección: Subida de múltiples archivos -->
+            <fieldset class="full-width">                
+                
+                <legend>Adjuntar Documentación</legend>
+
+                <div class="form-group">
+                    <label for="">Selecciona uno o más archivos:</label><br>
+                    <input type="file" name="fichero" id="fichero">
+
+                </div>
+            </fieldset>
+
+        </div>
+
+        <!-- Botón Enviar -->
+        <div class="actions">
+            <input type="submit" name="" id="" class="btn-submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
