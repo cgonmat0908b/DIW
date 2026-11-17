@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Nombre: Cristian González Mateo</h1>
+    <h1>Practica: Practica 03-07 circulos y viewbox</h1>
+
+    <h2>Ej1. Crea cada uno de los ejemplos que aparecen el la practica</h2>
+    
+    <h2>
+        Ejercicio 2. Crea un svg que aparezca un circulo de tamaño 300 dentro de otro tamaño 200.
+        Con un width 300x300 y un viewport de 250x250
+    </h2>
+
+    <h2>
+        Ejercicio2a. Crea un archivo independiente de svg con el archivo anterior.
+    </h2>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="300" height="300" viewBox="-125 -125 250 250">
+        <circle cx="0" cy="0" r="150" fill="red" />
+        <circle cx="0" cy="0" r="100" fill="green" />
+    </svg>
+
+    <h2>
+        Ejercicio 3. Crea un svg que aparezcan cinco circulos de colores degradados de rojo
+        (fill:#550000, fill:880000, fill:AA0000, fill:CC0000,fill:FF0000) cuyo rx se vaya desplazando 25 y
+        su radio vaya creciendo de 5 en 5.
+    </h2>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="200" height="200" viewBox="-50 -100 200 200"
+    style="background-color: aquamarine;">
+        <circle cx="5" cy="0" r="10" fill="#550000" />
+        <circle cx="25" cy="0" r="15" fill="#880000" />
+        <circle cx="50" cy="0" r="20" fill="#AA0000" />
+        <circle cx="75" cy="0" r="30" fill="#CC0000" />
+        <circle cx="100" cy="0" r="35" fill="#FF0000" />
+    </svg>
+
+    <h2>
+        Ejercicio 4. Modifica el anterior para que el degradado sea en
+        verdes y se incremente sobre el eje cy y se se vaya desplazando de
+        25 en 25m de manera que el más oscuro salga encima de la pila y
+        su radio vaya creciendo de 5 en 5
+    </h2>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="200" height="200" viewBox="-100 -50 200 200"
+    style="background-color: aquamarine;">
+        <circle cx="0" cy="5" r="10" fill="#550000" />
+        <circle cx="0" cy="25" r="15" fill="#880000" />
+        <circle cx="0" cy="50" r="20" fill="#AA0000" />
+        <circle cx="0" cy="75" r="30" fill="#CC0000" />
+        <circle cx="0" cy="100" r="35" fill="#FF0000" />
+    </svg>
+
+    <h2>
+        Ejercicio 5. Modifica el anterior para que el degradado sea en
+        amarillos,cyan y purpura y se incremente sobre el eje cy y el cx de
+        manera que salga esta figura.
+    </h2>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="300" height="300" viewBox="-200 -200 400 400"
+    style="background-color: lightgrey;">
+
+        <!--Degradado de Amarillos-->
+        <circle cx="-115" cy="-95" r="15" fill="#888800" />
+        <circle cx="-90" cy="-75" r="20" fill="#AAAA00" />
+        <circle cx="-62" cy="-50" r="25" fill="#CCCC00" />
+        <circle cx="-32" cy="-25" r="30" fill="#FFFF00" />
+        
+        <!-- Degradado de cyanes -->
+        <circle cx="115" cy="-100" r="15" fill="#005555" />
+        <circle cx="90" cy="-80" r="20" fill="#008888" />
+        <circle cx="62" cy="-55" r="25" fill="#00AAAA" />
+        <circle cx="32" cy="-30" r="30" fill="#00CCCC" />
+        <circle cx="0" cy="-5" r="35" fill="#00FFFF" />
+        
+        <!--Degradado de magentas-->
+        <circle cx="0" cy="25" r="30" fill="#FF00FF" />
+        <circle cx="0" cy="60" r="25" fill="#CC00CC" />
+        <circle cx="0" cy="90" r="20" fill="#AA00AA" />
+        <circle cx="0" cy="115" r="15" fill="#880088" />
+    </svg>
+
+
+    <h2>
+        Ejercicio 6. Modifica los viewbox para que se vea
+        solo esto . (puedes usar otra figura)
+    </h2>
+
+
+</body>
+
+</html>

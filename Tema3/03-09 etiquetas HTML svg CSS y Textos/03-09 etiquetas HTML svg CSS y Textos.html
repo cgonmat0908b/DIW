@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Nombre: Cristian González Mateo</h2>
+    <h2>Práctica: 03-09 etiquetas HTML svg CSS y Textos</h2>
+
+    <h2>
+        Ejercicio 1. Crea cada uno de los ejemplos que aparecen en la práctica.
+    </h2>
+
+    <h2>
+        Ejercicio 2. Crea la figura de la izquierda y añade un estilo css el
+        para que al pasar el ratón encima de cada forma se ponga en
+        color verde
+    </h2>
+    <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="200"
+    height="200" style="background-color: black;">
+
+        <defs>
+            <style>
+                .rect:hover{
+                    fill: green;
+                }
+
+                .poly:hover{
+                    fill: green;
+                }
+
+                .circ:hover{
+                    fill: green;
+                }
+            </style>
+        </defs>
+
+        <rect x1="-50" y1="-50" width="40" height="40"  fill="cyan" class="rect"></rect>
+        <polygon points="-70 -50, -90 -25,-50 -25" fill="orange" class="poly"></polygon>
+        <circle cx="-70" cy="0" r="20" fill="red" class="circ"></circle>
+    </svg>
+
+    <br>
+
+    <h2>
+        Ejercicio 3. Modifica el anterior ejercicio con esta forma para que
+        al pasar el ratón encima de cada forma se ponga en el color que
+        tiene cada forma pero en claro.
+    </h2>
+
+    <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="200"
+    height="200" style="background-color: black;">
+
+        <defs>
+            <style>
+                .rect2:hover{
+                    fill: lightcyan;
+                }
+
+                .poly2:hover{
+                    fill: #FFD699;
+                }
+
+                .circ2:hover{
+                    fill: #fe6666;
+                }
+            </style>
+        </defs>
+
+        <rect x1="-50" y1="-50" width="40" height="40"  fill="cyan" class="rect2"></rect>
+        <polygon points="-70 -50, -90 -25,-50 -25" fill="orange" class="poly2"></polygon>
+        <circle cx="-70" cy="0" r="20" fill="red" class="circ2"></circle>
+    </svg>
+
+    <h2>
+        Ejercicio 4. Crea un texto que tenga como estilo fuente georgia y tamaño 25 que diga
+        “IESPLAYAMAR”
+    </h2>
+
+    <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="200"
+    height="200" style="background-color: black;">
+
+        <defs>
+            <style>
+                .playa{
+                    font-family: Georgia;
+                    font-size: 25;
+                    fill: white;
+                }
+            </style>
+        </defs>
+        <text x="-80" y="-80" class="playa">IESPLAYAMAR</text>
+    </svg>
+
+    <h2>
+        Ejercicio 5. Modifica el ejemplo 12 añadiendo nuevos circulos
+        y gradientes para obtener esto
+    </h2>
+    
+
+</body>
+
+</html>
