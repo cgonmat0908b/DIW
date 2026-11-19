@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <svg width="450" height="180">
+
+        <defs>
+
+            <!-- Filtro de desenfoque -->
+            <filter id="desenfoque">
+                <feGaussianBlur stdDeviation="4" />
+            </filter>
+
+                <!-- Filtro de sombra -->
+            <filter id="sombra">
+                <feDropShadow
+                dx="3"
+                dy=""
+                stdDeviation="3"
+                flood-color="black"
+                flood-opacity="0.6" />
+            </filter>
+
+        </defs>
+
+        <!-- Círculo normal -->
+        <circle cx="75" cy="80" r="40"
+        fill="steelblue" />
+
+        <!-- Círculo desenfocado -->
+        <circle cx="220" cy="80" r="40"
+        fill="steelblue"
+        filter="url(#desenfoque)" />
+
+        <!-- Círculo con sombra -->
+        <circle cx="365" cy="80" r="40"
+        fill="steelblue"
+        filter="url(#sombra)" />
+
+    </svg>
+    <br>
+    <!--SourceGraphic y Result -->
+    <svg>
+
+        <defs>
+            <filter id="sombra2">
+                
+                <!-- 1. Difuminar la imagen original -->
+                <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+                <!-- 2. Desplazar el difuminado -->
+                <feOffset in="blur" dx="4" dy="4" result="desplazado" />
+                <!-- 3. Combinar sombra + elemento original -->
+                <feBlend in="SourceGraphic" in2="desplazado" mode="normal" />
+
+            </filter>
+        </defs>
+
+        <rect x="40" y="40" width="100" height="100" fill="tomato" filter="url(#sombra2)" />
+    </svg>
+
+    <h2>Ejemplo 2 </h2>
+
+    <svg width="120"
+    height="120"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+        <filter id="dropShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                <feOffset dx="2" dy="4" />
+                <feMerge>
+                    <feMergeNode/>
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+        <circle cx="60" cy="60" r="50" fill="green" filter="url(#dropShadow)" />
+    </svg>
+
+    <h2>Ejemplo 3 imagen como filtro</h2>
+    <svg
+    viewBox="0 0 200 200"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200"
+    height="200">
+
+        <defs>
+            <filter id="image">
+                <feImage href="playa.png" />
+            </filter>
+        </defs>
+
+        <rect
+            x="10%"
+            y="10%"
+            width="80%"
+            height="80%"
+            style="filter:url(#image);">
+
+            <animate
+                attributeName="width"
+                from="10%"
+                to="80%"
+                dur="1s"
+                begin="0"
+                end="1">
+            </animate>
+
+            <animate
+                attributeName="width"
+                from="80%"
+                to="10%"
+                dur="1s"
+                begin="1"
+                end="2">
+            </animate>
+
+        </rect>
+
+        <text x="50" y="180" font-size="20">
+            Esto es un Svg
+        </text>
+
+    </svg>
+
+    <h2>Ejemplo 8</h2>
+
+    <svg>
+
+        <defs>
+            <filter id="spotlight">
+                <feSpecularLighting result="spotlight" specularConstant="1.5"
+                specularExponent="80" lighting-color="white">
+
+                    <fePointLight x="50" y="50" z="220" />
+
+                </feSpecularLighting>
+
+                <feComposite
+                in="SourceGraphic" in2="spotlight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"
+                />
+            </filter>
+
+        </defs>
+
+        <image href="playa.png" x="10%" y="10%" width="80%" height="80%"
+        style="filter:url(#spotlight);" />
+    </svg>
+
+    <h2>Ejemplo agua brillante</h2>
+    <svg width="200" height="200">
+
+        <filter id="agua">
+        <feTurbulence type="turbulence" baseFrequency="0.03" result="turb" />
+        <feDisplacementMap in="SourceGraphic" in2="turb" scale="15" result="dist" />
+        <feBlend in="dist" in2="SourceGraphic" mode="lighten" />
+        </filter>
+
+        <rect x="40" y="40" width="100" height="100" fill="tomato" filter="url(#agua)" />
+    </svg>
+
+
+    
+    
+
+</body>
+
+</html>
